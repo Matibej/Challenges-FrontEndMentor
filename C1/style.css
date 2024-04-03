@@ -1,0 +1,102 @@
+*{
+    background-color: gainsboro;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+    
+}
+
+.white-box {
+    display: flex;
+    width: 432px;
+    height: 399px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 15px;
+    padding-bottom: 50px;
+    gap: 40px;
+    margin: 50px
+    
+    
+   }
+
+.white-box img {
+    height: 90px;
+    width: 100px;
+    background-color: white;
+
+}   
+
+
+.white-box p {
+    background-color: white;
+    font-size: 25px;
+    font-weight: 300;
+
+    
+
+}
+
+#last-img {
+    height: 120px;
+    width: 130px
+}
+
+
+.white-box button {
+    color: white;
+    background-color: #ED6755;
+    height: 30px;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+}
+.box-hdr{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 432px;
+    background-color: white;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 1rem;
+}
+.box-hdr span {
+    background-color: white;
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+    font-size: 30px;
+    padding-top: 5px;
+    
+    
+}
+.white-box a {
+text-decoration: none;
+}
+
+#blue-boton{
+    background-color: #1C1B5D;
+}
+
+.white-box button:hover{
+    transition: 1s;
+    background-color: #96544b;
+}

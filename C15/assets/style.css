@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 300px;
+    background: var(--Dark-Blue);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.star-button{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background: hsl(215, 18%, 28%);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-icon{
+    height: 15px;
+    width: 15px;
+    background: url(../interactive-rating-component-main/images/icon-star.svg) no-repeat center/cover;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2{
+        font-size: 21px;
+        color: white;
+    }
+
+    p{
+        color: var(--Light-Grey);
+        font-size: 12px;
+    }
+}
+
+.score{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+      
+}
+
+.rating{
+        height: 35px;
+        width: 35px;
+        padding: 10px;
+        border-radius: 100%;
+        background: hsl(216, 17%, 23%);
+        cursor: pointer;
+        transition: 0.5s ease;
+        text-align: center;
+        color: var(--Light-Grey);
+
+        
+}
+
+.rating:hover{
+    background: var(--Medium-Grey);
+    color: white;
+    transition: 0.5s ease;
+
+}
+
+button{
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: var(--Orange);
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+button:hover{
+    color: var(--Orange);
+    background: white;
+    transition: 0.5s ease;
+
+}
+
+.focus{
+    color: white;
+    background: var(--Orange);
+    transition: 0.5s ease;
+}
+
+
+.congratulations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.img{
+    align-self: center;
+    height: 100px;
+    width: 150px;
+    background: url(../interactive-rating-component-main/images/illustration-thank-you.svg) no-repeat center/cover;
+}
+
+.score-msg{
+    align-self: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 160px;
+    height: 25px;
+    padding: 5px;
+    font-size: 14px;
+    background: hsl(216, 17%, 23%);
+    color: var(--Orange);
+}
+
+.thanks-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+
+    h2{
+        color: white;
+    }
+
+    p{
+        color: var(--Medium-Grey);
+    }
+}

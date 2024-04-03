@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.title-and-description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.title-and-description a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 1s ease;
+}
+
+.title-and-description p{
+    width: 240px;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.price img{
+    height: 14px;
+}
+
+.price span:first-child{
+    color: cyan;
+
+}
+
+.price span:last-child{
+   color: hsl(215, 51%, 70%);
+}
+
+.equilibrium-img{
+    
+    height: 260px;
+    width: 240px;
+    border-radius: 5px;
+    background: url(./nft-preview-card-component-main/images/image-equilibrium.jpg) no-repeat center/cover;
+}
+
+.view-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.479);
+    opacity: 0;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.view-img:hover{
+    opacity: 1;
+    transition: 1s ease;
+ }
+
+hr{
+    width: 100%;
+    border-color: rgba(255, 255, 255, 0.452);
+
+}
+
+.person{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.person span{
+    color: hsl(215, 51%, 70%);
+    font-size: 12px;
+}
+
+.person a{
+    color: white;
+    transition: 1s ease;
+}
+
+.person img{
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+a:hover{
+    color: cyan;
+    transition: 1s ease;
+}

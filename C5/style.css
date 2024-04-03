@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(54, 230, 221), rgb(240, 100, 198));
+}
+
+#service {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+    padding: 60px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.oferta{
+    height: 290px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+    
+    
+}
+
+
+
+.oferta p {
+    font-size: 14px;
+    color: rgb(26, 26, 87);
+    font-weight: 800;
+}
+
+.oferta span {
+    font-size: 14px;
+    color: rgb(26, 26, 87);
+    font-weight: 500;
+}
+
+#service div:last-child{
+    padding-bottom: 20px;
+    gap: 14px;
+}
+
+h2{
+    color: rgb(26, 26, 87);
+    font-weight: 800;
+}
+
+h3{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+h3 {
+    color: rgb(26, 26, 87);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#boton1{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(240, 100, 198);
+}
+
+#boton2{
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(54, 230, 221);
+}
+
+#boton3{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background: black;
+}

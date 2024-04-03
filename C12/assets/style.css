@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+main{
+    display: flex;
+    flex-direction: column ;
+    width: 100%;
+    height: 100vh;
+    background: var(--Pale-blue);
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container{
+    background: url(../order-summary-component-main/images/illustration-hero.svg) no-repeat center/cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+    color: var(--Desaturated-blue);
+}
+
+h1{
+    font-size: 25px;
+    color: var(--Dark-blue);
+}
+
+.plan-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--Very-pale-blue);
+    border-radius: 10px;
+
+}
+
+.music-img{
+    width: 40px;
+    height: 40px;
+    background: url(../order-summary-component-main/images/icon-music.svg) no-repeat center/cover;
+}
+
+.title{
+    color: var(--Dark-blue);
+    font-size: 14px;
+}
+
+.price{
+    color: var(--Desaturated-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.change-btn{
+    border: none;
+    color: var(--Bright-blue);
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    transition: 0.5s ease; 
+}
+
+.change-btn:hover{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    transition: 0.5s ease; 
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.proceed-btn{
+    padding: 12px 0px;
+    border: none;
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    box-shadow: 1px 10px 70px var(--Desaturated-blue);
+    cursor: pointer;
+    transition: 0.5s ease; 
+}
+
+.proceed-btn:hover{
+    background-color: hsla(245, 75%, 52%, 0.842) ;
+    transition: 0.5s ease; 
+}
+
+.cancel-btn{
+    border: none;
+    background: none;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    transition: 0.5s ease; 
+    cursor: pointer;
+}
+
+.cancel-btn:hover{
+    color: var(--Bright-blue);
+    transition: 0.5s ease; 
+}

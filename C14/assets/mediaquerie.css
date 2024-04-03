@@ -1,0 +1,20 @@
+@media (max-width: 1000px) {
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bar-container{
+        width: 300px;
+        align-self: center;
+    }
+
+    .bubble{
+        bottom: 15%;
+        right: 45%;
+    }
+
+}

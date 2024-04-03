@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Commissioner", sans-serif;
+}
+
+:root{
+--Moderate-cyan: hsl(176, 50%, 47%);
+--Dark-cyan: hsl(176, 72%, 28%);
+--Black: hsl(0, 0%, 0%);
+--Dark-gray: hsl(0, 0%, 48%);
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 229, 229);
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background: url(../crowdfunding-product-page-main/images/image-hero-desktop.jpg) no-repeat center;
+    color: white;
+    justify-content: space-between;
+    padding: 40px 50px;
+    
+}
+
+nav{
+    display: flex;
+    height: 25px;
+    align-items: center;
+
+
+}
+
+.toggle-menu{
+    display: none;
+}
+
+
+
+h2{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.navbar{
+    display: flex;
+    gap: 50px;
+    
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+section{
+    background-color: white;
+    min-width: 350px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 45px;
+    border-radius: 5px;
+}
+
+.logo{
+    position: absolute;
+    align-self: center;
+    top: -2%;
+    width: 50px;
+    height: 50px;
+    background: url(../crowdfunding-product-page-main/images/logo-mastercraft.svg) no-repeat center/cover;
+}
+
+.project{
+    gap: 50px;
+}
+
+.project-name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    h3{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    p{
+        color: var(--Dark-gray);
+    }
+}
+
+.projects-btn{
+    display: flex;
+    justify-content: space-between;
+    
+
+    .back-project{
+        cursor: pointer;
+        background-color: var(--Dark-cyan);
+        border: none;
+        padding: 15px 25px;
+        border-radius: 20px;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        transition: 0.5s ease;
+        
+    }
+
+    .back-project:hover{
+        background: var(--Moderate-cyan);
+        transition: 0.5s ease;
+    }
+
+    .bookmark{
+        height: 60px;
+        border: none;
+        background-color: rgb(243, 242, 242);
+        border-radius: 30px 20px 20px 30px;
+        padding: 0px 25px 0px 0;
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        
+
+        .mark{
+            height: 60px;
+            width: 60px;
+            background: url(../crowdfunding-product-page-main/images/icon-bookmark.svg) no-repeat center/cover;
+        }
+
+        button{
+            border: none;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            color: var(--Moderate-cyan);
+        }
+    }
+}
+
+
+.bookmarked {
+    .marked{
+        height: 60px;
+        width: 60px;
+        background: url(../crowdfunding-product-page-main/images/icon-bookmarked.svg) no-repeat center/cover;
+    }
+
+
+    button{
+        color: var(--Moderate-cyan);
+    }
+}
+
+.bookmarked-img{
+    background: url(../crowdfunding-product-page-main/images/icon-bookmarked.svg) no-repeat center/cover;
+}
+
+
+.backers{
+    display: flex;
+    flex-direction: column;
+}
+
+.backers-data{
+    display: flex;
+    justify-content: space-around;
+
+
+    li:nth-child(2){
+        padding: 0 100px;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+    }
+    
+}
+
+.backers-data li{
+    display: flex;
+    flex-direction: column;
+    
+    span:first-child{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    span:last-child{
+        color: var(--Dark-gray);
+    }
+}
+
+.backers-progress{
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    align-self: center;
+    background-color: lightgray;
+
+    .progress{
+        border-radius: 20px;
+        width: 75%;
+        height: 5px;
+        padding: 5px;
+        background-color: var(--Dark-cyan);
+    }
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    h4{
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    p{
+        color: var(--Dark-gray);
+    }
+}
+
+.rewards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    li{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--Dark-gray);
+        border-radius: 10px;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .reward-head{
+        display: flex;
+        justify-content: space-between;
+
+        span{
+            font-weight: 700;
+        }
+
+        span:last-child{
+            color: var(--Moderate-cyan);
+        }
+    }
+
+    .reward-info{
+        color: var(--Dark-gray);
+    }
+
+
+    .select-reward{
+        display: flex;
+        justify-content: space-between;
+
+
+        button{
+            border: none;
+            border-radius: 30px;
+            background-color: var(--Dark-cyan);
+            padding: 15px;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        button:hover{
+            background: var(--Moderate-cyan);
+            transition: 0.5s ease;
+        }
+    }
+
+    .reward-count{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span:first-child{
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        span:last-child{
+            color: var(--Dark-gray);
+        }
+
+        
+    }
+}
+
+
+.black-layout{
+    display: block;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.527);
+}
+
+/* form */
+
+form{
+    position: absolute;
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    min-width: 350px;
+    width: 70%;
+    gap: 50px;
+    padding: 45px;
+    border-radius: 20px;
+
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.options-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--Dark-gray);
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.options-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--Dark-gray);
+    padding: 30px;
+}
+
+.options-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.options-title{
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+
+    span{
+        color: var(--Moderate-cyan);
+        font-weight: 700;
+    }
+
+    div{
+        display: flex;
+        gap: 10px;
+        color: black;
+        font-weight: 700;
+    }
+    
+}
+
+
+
+.rewards-left{
+    color: var(--Dark-gray);
+    
+    span{
+        font-size: 22px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+
+input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    height: 20px;
+    width: 20px;
+    border:  4px solid white;
+    align-self: center;
+    border-radius: 100%;
+    outline: 1px solid var(--Dark-gray);
+}
+
+input[type="radio"]:checked{
+    background-color: var(--Moderate-cyan);
+}
+
+/* opciones desplegables */
+
+.select-pledge{
+    
+    padding: 30px;
+    border-top: 1px solid lightgray;
+    display: none;
+    justify-content: space-between;
+    color: var(--Dark-gray);
+    align-items: center;
+    
+    div{
+        display: flex;
+        gap:20px
+    }
+
+    input[type="number"]{
+        border: 1px solid var(--Moderate-cyan);
+        padding: 15px 20px;
+        border-radius: 30px;
+        width: 100px;
+        outline: none;
+        font-weight: 500;
+    }
+
+    input[type="submit"]{
+        border-radius: 30px;
+        background: var(--Dark-cyan);
+        color: white;
+        font-weight: 700;
+        padding: 15px 25px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    input[type="submit"]:hover{
+        background: var(--Moderate-cyan);
+        transition: 0.5s ease;
+
+    }
+}

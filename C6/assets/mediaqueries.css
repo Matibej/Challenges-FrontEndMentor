@@ -1,0 +1,50 @@
+@media(max-width: 375px) {
+
+main{
+    flex-direction: column;
+    width: 90%;
+}
+
+.images{
+    width: 100%;
+    height: 0;
+}
+
+#bg {
+    height: 200px;
+    left: 150px;
+    bottom: 20px;
+    
+
+}
+
+#woman{
+    height: 150px;
+    left: 155px;
+    bottom: 180px;
+}
+
+#box{
+    height: 55px;
+    left: -40px;
+    bottom: 200px;
+}
+
+.info{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.info h1{
+    font-size: 20px;
+    align-self: center;
+}
+
+.info summary{
+    font-size: 10px;
+}
+
+.info p{
+    font-size: 10px;
+}
+}

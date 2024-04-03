@@ -1,0 +1,22 @@
+@media (min-width: 375px) and (max-width: 1000px) {
+
+main{
+    grid-template-areas: 
+    
+    "daniel"
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira"
+    ;
+
+
+}
+
+.bg{
+    left: 200px;
+}
+
+    
+}

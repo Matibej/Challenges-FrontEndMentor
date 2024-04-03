@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #ffedd2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.profile {
+    height: 456px;
+    width: 486px;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 30px;
+    
+}
+
+.francis{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+img{
+    height: 120px;
+    width: 160px;
+    border-radius: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.buttons button{
+height: 50px;
+width: 200px;
+border-radius: 30px;
+border-color: transparent;
+font-weight: 800;
+cursor: pointer;
+}
+
+.buttons button:first-child{
+    background: linear-gradient(to right, #FA3967, #F19639);
+}
+
+.buttons button:last-child{
+    background-color: #ffedd2;
+    
+}

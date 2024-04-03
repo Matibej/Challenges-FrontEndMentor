@@ -1,0 +1,109 @@
+@media (max-width: 680px) {
+
+    .logo{
+        top: -1%;
+    }
+
+    .toggle-menu{
+        display: flex;
+        position: absolute;
+        right: 50px;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .navbar{
+        display: none;
+        position: relative;
+        background: white;
+        width: 100%;
+        z-index: 4;
+        top: 110px;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 10px 0 10px 10px;
+        border: 1px solid lightgray;
+
+        a{
+            color: black;
+        }
+    }
+
+    .bookmark{
+        button{
+            display: none;
+        }
+    }
+
+    .backers-data{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        
+        li{
+            text-align: center;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid lightgray;
+        }
+        
+
+        li:nth-child(2){
+            padding: 20px 0;
+            border-left: none;
+            border-right: none;
+        }
+
+    }
+
+    .select-reward{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .options-head, .options-title, .rewards-left span{
+        font-size: 14px;
+    }
+    
+    .options-title, .options-head{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .options-info p{
+        font-size: 15px;
+    }
+
+    .select-pledge{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 680px) {
+    .navbar{
+        display: flex;
+    }
+}
+
+.open{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.checked{
+    border: 1px solid var(--Moderate-cyan);
+}

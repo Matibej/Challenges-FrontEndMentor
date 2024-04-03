@@ -1,0 +1,138 @@
+@media (max-width: 1000px) {
+
+    .header-bar{
+        display: none;
+    }
+
+    .menu{
+        width: 100%;
+        max-width: 360px;
+        height: 100vh;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: black;
+        gap: 100px;
+        padding: 20px;
+    }
+
+    .menu-head{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-menu{
+        height: 20px;
+        width: 120px;
+    }
+
+    .close-icon{
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        background: url(../loopstudios-landing-page-main/images/icon-close.svg) no-repeat center/cover;
+    }
+
+    .menu-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 300;
+        }
+        
+    }
+
+
+    .nav-menu{
+        display: block;
+    }
+
+    .head-msg{
+        min-width: 300px;
+        width: 70%;
+        align-self: center;
+        font-size: 50px;
+    }
+
+
+    #hero{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero-img, .hero-msg{
+        width: 90%;
+        min-width: 300px;
+    }
+
+    .hero-img{
+        align-self: center;
+        height:50vh;
+    }
+
+    .hero-msg{
+        position: static;
+        align-self: center;
+        
+    }
+
+    .creations-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 450px);
+
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .head-msg{
+        font-size: 40px;
+    }
+
+    .creations-head{
+        gap: 20px;
+        h2{
+            font-size: 40px;
+        }
+
+        button{
+            display: none;
+        }
+    }
+
+    .view-all{
+        display: block;
+        align-self: center;
+    }
+
+    .creations-list{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 200px);
+
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-bar{
+        flex-direction: column;
+    }
+}
+
+
+.open{
+    display:flex;
+}
